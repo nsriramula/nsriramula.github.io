@@ -1,0 +1,106 @@
+/* Container for the form */
+.containers {
+  max-width: 600px;
+  width: 40%;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  position: absolute;
+}
+
+/* Heading */
+.heading {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Form */
+.form {
+  display: flex;
+  margin-left: 24px;
+  margin-right: 32px;
+  flex-direction: column;
+}
+
+/* Form group (each input/label pair) */
+.form-group {
+  margin-bottom: 20px;
+}
+
+/* Label */
+.label {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 8px;
+  display: block;
+}
+
+/* Input and Textarea */
+.input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 32px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.input:focus {
+  border-color: #007bff;
+}
+
+/* Textarea specific styles */
+.textarea {
+  height: 150px;
+  resize:none; /* Allow vertical resizing */
+}
+
+/* Submit Button */
+.button {
+  padding: 12px 20px;
+  width: 14rem;
+  font-size: 16px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 12px;
+  align-self: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+h2{
+  padding: 12px 20px;
+}
+.button-group{
+  display: flex;
+  margin-bottom: 16px;
+}
+.button:hover {
+  background-color: #0056b3;
+}
+.icon-button {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* Space between icon and text */
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  max-width: 3rem;
+}
+
+.icon-button:hover {
+  background-color: #0056b3;
+}
+
+/* Icon styles */
+.icon {
+  width: 40px; /* Adjust size as needed */
+  height: 40px; /* Adjust size as needed */
+}

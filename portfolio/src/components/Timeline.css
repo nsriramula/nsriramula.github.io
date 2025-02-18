@@ -1,0 +1,129 @@
+/* General Styles */
+body {
+    background-color: #f5f5dc; /* Parchment-like background */
+    font-family: 'Georgia', serif; /* Serif font for a classic look */
+    color: #4c4c4c; /* Dark gray for text */
+    line-height: 1.6;
+  }
+  
+/* Timeline Container */
+.timeline {
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 0;
+    min-height: 100vh; /* Ensure the container is tall enough */
+  }
+  
+  /* Timeline Line */
+  .timeline::after {
+    content: '';
+    position: absolute;
+    width: 4px;
+    background-color: #8b7355; /* Brownish color for the line */
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -2px; /* Center the line */
+    z-index: 1; /* Ensure the line is above other elements */
+  }
+  
+  /* Timeline Items */
+  .timeline-item {
+    padding: 20px;
+    position: relative;
+    width: 50%; /* Adjust width to prevent overlap */
+    box-sizing: border-box;
+  }
+  
+  /* Left-Aligned Items (Odd) */
+  .timeline-item:nth-child(odd) {
+    left: 0.2%;
+    text-align: left;
+    text-justify:auto;/* Align text to the right */
+    padding-right: 60px; /* Add padding to prevent overlap */
+  }
+  
+  /* Right-Aligned Items (Even) */
+  .timeline-item:nth-child(even) {
+    left: 49.7%; /* Move right-aligned items further to the right */
+    padding-left: 60px;
+    text-align: right; /* Add padding to prevent overlap */
+  }
+  ul{
+    text-align: justify;
+  }
+  .timeline-time{
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  /* Timeline Bullet Points */
+  .timeline-item::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #f5f5dc; /* Match the background */
+    border: 4px solid #8b7355; /* Brownish border */
+    top: 20px;
+    border-radius: 50%;
+    z-index: 2; /* Ensure bullets are above the line */
+  }
+  
+  /* Position Bullet Points for Left-Aligned Items (Odd) */
+  .timeline-item:nth-child(odd)::after {
+    right: -10px; /* Position bullet to the right of the left-aligned item */
+  }
+  
+  /* Position Bullet Points for Right-Aligned Items (Even) */
+  .timeline-item:nth-child(even)::after {
+    left: -10px; /* Position bullet to the left of the right-aligned item */
+  }
+  
+  /* Timeline Time */
+  .timeline-time {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #8b7355; /* Brownish color for the time */
+    font-family: 'Courier New', monospace; /* Monospace for a typewriter feel */
+  }
+  
+  /* Timeline Content */
+  .timeline-content {
+    padding: 20px;
+    background-color: #fff8e7; /* Light parchment color */
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: 1px solid #d2b48c; /* Light brown border */
+  }
+  
+  .timeline-content h3 {
+    margin-top: 0;
+    color: #5a3a22; /* Dark brown for headings */
+    font-family: 'Georgia', serif;
+    font-size: 1.5em;
+  }
+  
+  .timeline-content h4 {
+    margin: 5px 0;
+    color: #8b7355; /* Brownish color for company */
+    font-size: 1.1em;
+    font-weight: 500;
+    font-family: 'Georgia', serif;
+  }
+  
+  /* Timeline Description List */
+  .timeline-content ul {
+    list-style-type: disc; /* Use disc bullets for a classic look */
+    padding-left: 20px; /* Add some padding for the bullets */
+    margin: 10px 0;
+  }
+  
+  .timeline-content li {
+    margin-bottom: 8px; /* Add space between list items */
+    color: #4c4c4c; /* Dark gray for text */
+    font-family: 'Georgia', serif;
+    font-size: 1em;
+    line-height: 1.6;
+  }
+ 

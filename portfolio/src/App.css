@@ -1,0 +1,12 @@
+:root {
+  --bg: #f7f8f9;
+  --line: #5269bd;
+  --fill: #9bdabe;
+  --text: #1c494c;
+  --subtext: #73cadc;
+  --duo: #9bdabe;
+}
+
+.title{
+  font-size: 32px;
+}
